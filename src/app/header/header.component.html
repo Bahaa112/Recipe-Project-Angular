@@ -16,7 +16,7 @@
 
       <ul class="navbar-nav ms-auto">
         <li *ngIf="isAuthenticated">
-          <a style="cursor: pointer;">Logout</a>
+          <a style="cursor: pointer;" (click)="onLogout()">Logout</a>
         </li>
         <li class="nav-item dropdown" *ngIf="isAuthenticated">
           <a class="nav-link dropdown-toggle" appDropdown href="#" id="manageDropdown" role="button">
