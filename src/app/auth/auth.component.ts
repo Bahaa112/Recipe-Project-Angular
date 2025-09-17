@@ -84,4 +84,8 @@ export class AuthComponent implements OnDestroy {
       hostViewContainerRef.clear();
     });
   }
+
+  onEdit(){
+    
+  }
 }
