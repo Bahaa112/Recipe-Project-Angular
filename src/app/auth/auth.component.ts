@@ -86,9 +86,9 @@ export class AuthComponent implements OnDestroy {
   }
 
   onEdit(){
-
+//test
   }
   onEd(){
-    
+
   }
 }
