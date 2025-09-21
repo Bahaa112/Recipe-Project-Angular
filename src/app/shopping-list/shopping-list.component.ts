@@ -2,6 +2,7 @@ import { Component, EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { Ingredient } from '../shared/ingredient.model';
 import { ShoppingListService } from './shopping-list.service';
 import { Subscription } from 'rxjs';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-shopping-list',
@@ -13,7 +14,7 @@ export class ShoppingListComponent implements OnInit , OnDestroy {
   private igChangeSub: Subscription;
   
 
-  constructor(private slService: ShoppingListService){
+  constructor(private slService: ShoppingListService ){
 
   }
 
